@@ -2,13 +2,13 @@ public class ArraysRLENegZeroChecker {
     public static void main(String[] args) {
         int[] numbers = {1, 3, 5, -7, 9, 0, 11, 13};
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < 0) {
+        for (int number : numbers) {
+            if (number < 0) {
                 continue;
-            } else if (numbers[i] == 0) {
+            } else if (number == 0) {
                 break;
             }
-            System.out.println(numbers[i]);
+            System.out.println(number);
         }
     }
 }
