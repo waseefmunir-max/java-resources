@@ -21,5 +21,16 @@ public class ForEachLoops {
             sum += numberFor;
         }
         System.out.println(sum);
+
+        System.out.println();
+
+        // Printing multiplication of numbers in an array:
+        int multiplication = 1;
+        int[] numBer = {1, 2, 3, 4, 5};
+        for (int numBerFor : numBer) {
+            multiplication *= numBerFor;
+        }
+        System.out.println(multiplication);
+
     }
 }
