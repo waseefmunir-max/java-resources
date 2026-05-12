@@ -32,11 +32,11 @@ public class JavaArrays {
         // The array can be declared like this:
 //        String[] classSCars = new String[] {"Koenigsegg", "Ferrari", "BMW", "Lamborghini"};
 
-//        // But it's most common to write in the usual way:
-//        String[] classSCars = {"Koenigsegg", "Ferrari", "BMW", "Lamborghini"};
-//
-//        for (int i = 0; i < classSCars.length; i++) {
-//            System.out.println(classSCars[i]);
-//        }
+        // But it's most common to write in the usual way:
+        String[] classSCars = {"Koenigsegg", "Ferrari", "BMW", "Lamborghini"};
+
+        for (int i = 0; i < classSCars.length; i++) {
+            System.out.println(classSCars[i]);
+        }
     }
 }
