@@ -38,5 +38,11 @@ public class JavaArrays {
         for (int i = 0; i < classSCars.length; i++) {
             System.out.println(classSCars[i]);
         }
+
+        // Arrays can be declared in C-style way:
+        String mobiles[] = {"Samsung", "Xiaomi", "Oppo", "Realme"};
+        for (String mobileFor : mobiles) {
+            System.out.println(mobileFor);
+        }
     }
 }
