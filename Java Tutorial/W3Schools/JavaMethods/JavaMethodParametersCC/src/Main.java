@@ -4,6 +4,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Call welcomeMessage here
+        welcomeMessage("Waseef");
     }
 }
