@@ -1,5 +1,5 @@
 public class JavaMethod {
-    public static void main(String[] args) {
-
+    static void aMethod() {
+        System.out.println("Hello World!");
     }
 }
