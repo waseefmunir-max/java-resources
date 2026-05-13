@@ -8,6 +8,9 @@ public class FirstClass {
         System.out.println("Max speed is: " + maxSpeed);
     }
 
+    public FirstClass() {
+    }
+
     public static void main(String[] args) {
         FirstClass myObject = new FirstClass();
 
