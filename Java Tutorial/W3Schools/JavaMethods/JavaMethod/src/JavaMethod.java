@@ -5,7 +5,7 @@ public class JavaMethod {
 
     public static void main(String[] args) {
         aMethod();
-        aMethod();
+        aMethod(); // Methods can be called multiple times
         aMethod();
     }
 }
