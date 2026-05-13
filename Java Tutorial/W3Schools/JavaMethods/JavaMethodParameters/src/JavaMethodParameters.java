@@ -3,5 +3,9 @@ public class JavaMethodParameters {
         System.out.println(fName + " Walker");
     }
 
-
+    public static void main(String[] args) {
+        firstName("Alan");
+        firstName("Paul");
+        firstName("John");
+    }
 }
