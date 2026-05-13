@@ -1,10 +1,14 @@
 public class JavaMethodReturnValues {
-    static int sum2Numbers (int x, int y) {
+    static int sum2Numbers(int x, int y) {
         return x + y;
     }
 
     static int doubler(int x) {
-        return x *= 2;
+        return x * 2;
+    }
+
+    static String greetingMsg(String name) {
+        return "Hello, " + name;
     }
 
     public static void main(String[] args) {
@@ -15,7 +19,13 @@ public class JavaMethodReturnValues {
         System.out.println();
 
         for (int i = 1; i <= 5; i++) {
-            System.out.println("DOuble of " + i + " is " + doubler(i));
+            System.out.println("Double of " + i + " is " + doubler(i));
         }
+
+        System.out.println();
+
+        System.out.println(greetingMsg("Alan"));
+        System.out.println(greetingMsg("Paul"));
+        System.out.println(greetingMsg("Walker"));
     }
 }
