@@ -1,5 +1,7 @@
 public class First {
     int x = 5;
+    int y = 6;
+    final double PI = 3.14159;
 
     public static void main(String[] args) {
         First myObject1 = new First(); // creating an object
