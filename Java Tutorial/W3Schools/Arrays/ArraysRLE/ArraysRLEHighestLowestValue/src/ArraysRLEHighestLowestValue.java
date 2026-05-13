@@ -1,6 +1,6 @@
 public class ArraysRLEHighestLowestValue {
     public static void main(String[] args) {
-        int numbers[] = {2,5,7,-8,5,9,4,3};
+        int numbers[] = {2, 5, 7, -8, 5, 9, 4, 3};
         int min = numbers[0];
         int max = numbers[0];
 
