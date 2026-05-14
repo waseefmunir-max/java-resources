@@ -5,7 +5,7 @@ public class JavMethodOverloading {
 
     static double sum2Numbers(double x, double y) {
         return x + y;
-    }
+    } // Method with the same name can be declared, as long as their data type is different
 
     public static void main(String[] args) {
 
