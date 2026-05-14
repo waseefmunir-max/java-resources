@@ -1,4 +1,4 @@
-public class JavaMethod {
+public class Method {
     static void aMethod() {
         System.out.println("Hello World!");
     }
