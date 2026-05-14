@@ -10,7 +10,11 @@ public class MultidimArrays {
 
         int[][] number = {{2, 4, 6, 8}, {1, 3, 5, 7}};
 
-
+        for (int row = 0; row < number.length; row++) {
+            for (int col = 0; col < number[row].length; col++) {
+                System.out.println("number[" + row + "][" + col + "] = " + number[row][col]);
+            }
+        }
 //        for (int[] numberFor1 : number) {
 //            for (int numberFor2 : numberFor1) {
 //                System.out.print(numberFor2 + " ");
