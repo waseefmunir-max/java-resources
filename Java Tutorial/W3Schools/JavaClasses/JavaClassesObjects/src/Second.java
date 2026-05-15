@@ -4,7 +4,8 @@ public class Second {
     public static void main(String[] args) {
         First myObj1 = new First(); // Accessing the 'First' class
         Second myObj2 = new Second(); // Accessing the 'Second' class
-        First myObj3 = new First();
+//        First myObj3 = new First();
+        Second myObj3 = new Second();
 
         System.out.println(myObj1.y);
         System.out.println(myObj2.z);
@@ -14,6 +15,9 @@ public class Second {
 
         System.out.println(myObj1.y);
         System.out.println(myObj2.z);
+//        System.out.println(myObj3.x);
+//        System.out.println(myObj3.y);
+        System.out.println(myObj3.z);
 
 //        myObj3.PI = 4.14159; // causes an error
     }
