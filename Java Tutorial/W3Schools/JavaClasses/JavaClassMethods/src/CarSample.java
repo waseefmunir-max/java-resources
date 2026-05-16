@@ -1,4 +1,4 @@
-public class FirstClass {
+public class CarSample {
     //    public static void fullThrottle() {
     public void fullThrottle() {
         System.out.println("The car is going as fast as it can!");
@@ -13,10 +13,10 @@ public class FirstClass {
     }
 
     public static void main(String[] args) {
-        FirstClass carObject = new FirstClass();
+        CarSample carSampleObject = new CarSample();
 
-        carObject.fullThrottle();
-        carObject.speed(180);
-        carObject.gearNo(6);
+        carSampleObject.fullThrottle();
+        carSampleObject.speed(180);
+        carSampleObject.gearNo(6);
     }
 }
