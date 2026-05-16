@@ -1,5 +1,5 @@
 public class FirstClass {
-//    public static void fullThrottle() {
+    //    public static void fullThrottle() {
     public void fullThrottle() {
         System.out.println("The car is going as fast as it can!");
     }
@@ -13,9 +13,10 @@ public class FirstClass {
     }
 
     public static void main(String[] args) {
-        FirstClass myObject = new FirstClass();
+        FirstClass carObject = new FirstClass();
 
-        myObject.fullThrottle(); // calling methods just like  variables
-        myObject.speed(180);
+        carObject.fullThrottle();
+        carObject.speed(180);
+        carObject.gearNo(6);
     }
 }
