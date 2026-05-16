@@ -10,9 +10,11 @@ public class Second {
         System.out.println(myObj1.y);
         System.out.println(myObj2.z);
 
+        myObj1.x = 50;
         myObj1.y = 60;
         myObj2.z = 80;
 
+        System.out.println(myObj1.x);
         System.out.println(myObj1.y);
         System.out.println(myObj2.z);
 //        System.out.println(myObj3.x);

@@ -8,7 +8,8 @@ public class FirstClass {
         System.out.println("Max speed is: " + maxSpeed);
     }
 
-    public FirstClass() {
+    public void gearNo(int x) {
+        System.out.println("The car is running on gear no. " + x);
     }
 
     public static void main(String[] args) {
@@ -16,6 +17,5 @@ public class FirstClass {
 
         myObject.fullThrottle(); // calling methods just like  variables
         myObject.speed(180);
-
     }
 }
