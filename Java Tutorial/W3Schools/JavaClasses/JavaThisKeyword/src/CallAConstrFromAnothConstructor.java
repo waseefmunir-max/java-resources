@@ -8,7 +8,9 @@ public class CallAConstrFromAnothConstructor {
     }
 
     public CallAConstrFromAnothConstructor(int releaseYear, String brandName, String modelName) {
-
+        this.releaseYear = releaseYear;
+        this.brandName = brandName;
+        this.modelName = modelName;
     }
 
     public static void main(String[] args) {
