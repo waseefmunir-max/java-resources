@@ -1,12 +1,14 @@
 public class JavaThisKeyword {
     int x; // Initializing a variable of the class
 
-    public JavaThisKeyword() {
-        x = 5;
+    public JavaThisKeyword(int x) {
+//        x = x; // Here, Java thinks it as both are 'parameter x', not the class's x
+        // To indicate the class/object's x, we use 'this' keyword:
+        this.x = x; // Sets the value of 'parameter x' into the 'class/object's x'
     }
 
     public static void main(String[] args) {
-        JavaThisKeyword myObject = new JavaThisKeyword();
+        JavaThisKeyword myObject = new JavaThisKeyword(5);
 
         System.out.println(myObject.x);
     }
