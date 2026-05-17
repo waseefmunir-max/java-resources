@@ -15,7 +15,7 @@ public class CallAConstrFromAnothConstructor {
 
     public void printCarInfo() {
         // As we have already put the parameter values of releaseYear, brandName and modelName, we can now use them directly.
-
+        System.out.println("Car: " + brandName + " " + modelName + " (" + releaseYear + ")");
     }
 
     public static void main(String[] args) {
