@@ -13,7 +13,13 @@ public class CallAConstrFromAnothConstructor {
         this.modelName = modelName;
     }
 
+    public void printCarInfo() {
+        // As we have already put the parameter values of releaseYear, brandName and modelName, we can now use them directly.
+
+    }
+
     public static void main(String[] args) {
+        CallAConstrFromAnothConstructor carObj1 = new CallAConstrFromAnothConstructor("BMW", "GTR");
 
     }
 }
