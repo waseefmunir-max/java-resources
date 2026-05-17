@@ -3,7 +3,7 @@ public class CallAConstrFromAnothConstructor {
     String brandName, modelName;
 
     public CallAConstrFromAnothConstructor(String modelName, String brandName) {
-//        brandName = "Hello";
+//        brandName = "Hello"; // This line will cause an error
         this(2000, brandName, modelName); // Note that while calling a constructor from another constructor of same class, the calling line has to be the first line, otherwise it will throw an error
     }
 
@@ -19,7 +19,8 @@ public class CallAConstrFromAnothConstructor {
     }
 
     public static void main(String[] args) {
-        CallAConstrFromAnothConstructor carObj1 = new CallAConstrFromAnothConstructor("BMW", "GTR");
+        CallAConstrFromAnothConstructor carObj1 = new CallAConstrFromAnothConstructor("BMW", "GTR"); // It will call the 1st constructor (on line 5)
+
 
     }
 }
