@@ -1,6 +1,6 @@
 class AMClass {
     public String name = "John Doe"; // Accessible everywhere
-    private int age = 25; // Accessible only in class AMClass
+    private final int age = 25; // Accessible only in class AMClass
 }
 
 public class AMClass1 {
