@@ -5,7 +5,7 @@ class AMClass {
 
 public class AMClass1 {
     public String name = "Loren Ipsum";
-    public int age = 24;
+    public int age = 20;
 
     public static void main(String[] args) {
         AMClass obj = new AMClass();
