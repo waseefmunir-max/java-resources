@@ -2,7 +2,7 @@ public class NAMClass {
     final int x = 5;
     final String name = "Alan";
 
-    static void myMethod() {
+    static void myStaticMethod() {
         System.out.println("This is a statement.");
     }
 
@@ -15,7 +15,7 @@ public class NAMClass {
         System.out.println(namObj.name);
 
         // The static method can be called in two ways:
-        myMethod();
-        NAMClass.myMethod();
+        myStaticMethod(); // Calling it directly
+        NAMClass.myStaticMethod(); // Calling by object
     }
 }
