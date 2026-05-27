@@ -7,7 +7,9 @@ public class UserInput {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
+        String name = scanner.nextLine(); // nextLine() is a method of the Scanner class that reads a line of text even if it contains spaces. It waits for the user to input a line of text and then returns that text as a String.
+        // To read a single word (without spaces), you can use the next() method instead of nextLine(). For example:
+//        String name = scanner.next();
 
         System.out.println("Hello, " + name);
 
