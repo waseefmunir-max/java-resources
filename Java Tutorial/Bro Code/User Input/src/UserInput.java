@@ -28,6 +28,7 @@ public class UserInput {
 
         System.out.println("Hello, " + name);
         System.out.println("You are " + age + " years old");
+        System.out.println("You are student: " + isStudent);
         System.out.println("Your cgpa: " + cgpa);
 
         scanner.close(); // Good practice to close the object
