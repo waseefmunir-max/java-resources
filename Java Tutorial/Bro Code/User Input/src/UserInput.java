@@ -20,16 +20,23 @@ public class UserInput {
         boolean isStudent = scanner.nextBoolean();
 
         // To read doubles, you can use the nextDouble() method. For example:
-        System.out.print("Enter your cgpa: ");
-        double cgpa = scanner.nextDouble();
+        double cgpa = 0;
+        if (isStudent) {
+            System.out.print("Enter your cgpa: ");
+            cgpa = scanner.nextDouble();
+        }
 
 //        System.out.print("Enter your expected grade: ");
 //        char grade = scanner.next
 
         System.out.println("Hello, " + name);
         System.out.println("You are " + age + " years old");
-        System.out.println("You are student: " + isStudent);
-        System.out.println("Your cgpa: " + cgpa);
+        if (isStudent) {
+            System.out.println("You are enrolled as student");
+            System.out.println("Your cgpa: " + cgpa);
+        } else {
+            System.out.println("You are NOT enrolled as student");
+        }
 
         scanner.close(); // Good practice to close the object
     }
