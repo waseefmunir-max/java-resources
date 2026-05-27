@@ -15,6 +15,10 @@ public class UserInput {
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
+        // To read a boolean, you can use the nextBoolean() method. For example:
+        System.out.print("Are you a student (true: Yes, false: No): ");
+        boolean isStudent = scanner.nextBoolean();
+
         // To read doubles, you can use the nextDouble() method. For example:
         System.out.print("Enter your cgpa: ");
         double cgpa = scanner.nextDouble();
