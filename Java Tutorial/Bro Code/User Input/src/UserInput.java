@@ -15,6 +15,13 @@ public class UserInput {
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
+        // To read doubles, you can use the nextDouble() method. For example:
+        System.out.print("Enter your cgpa: ");
+        double cgpa = scanner.nextDouble();
+
+//        System.out.print("Enter your expected grade: ");
+//        char grade = scanner.next
+
         System.out.println("Hello, " + name);
         System.out.println("You are " + age + " years old");
 
