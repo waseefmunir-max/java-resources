@@ -11,7 +11,12 @@ public class UserInput {
         // To read a single word (without spaces), you can use the next() method instead of nextLine(). For example:
 //        String name = scanner.next();
 
+        // To read an integer, you can use the nextInt() method. For example:
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
         System.out.println("Hello, " + name);
+        System.out.println("You are " + age + " years old");
 
         scanner.close(); // Good practice to close the object
     }
