@@ -21,15 +21,17 @@ public class UserInput {
 
         // To read doubles, you can use the nextDouble() method. For example:
         double cgpa = 0;
+        char gradeExpected = 0;
+
         if (isStudent) {
             System.out.print("Enter your cgpa: ");
             cgpa = scanner.nextDouble();
-        }
 
-        // To read char, you can use the next() method and take only the first character from the string:
-        System.out.print("What is your expected grade? (A, B, C, D): ");
-//        String gradeExpected = scanner.next().charAt(0); // It will cause an error because charAt(0) returns a char, but we are trying to assign it to a String variable. To fix this, we can change the variable type to char:
-        char gradeExpected = scanner.next().charAt(0);
+            // To read char, you can use the next() method and take only the first character from the string:
+            System.out.print("What is your expected grade? (A, B, C, D): ");
+            // String gradeExpected = scanner.next().charAt(0); // It will cause an error because charAt(0) returns a char, but we are trying to assign it to a String variable. To fix this, we can change the variable type to char:
+            gradeExpected = scanner.next().charAt(0);
+        }
 
         System.out.println("Hello, " + name);
         System.out.println("You are " + age + " years old");
