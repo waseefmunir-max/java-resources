@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class UserInput {
     public static void main(String[] args) {
 
-        // Here, 'Scanner' is a class that allows us to read user input from the console. We create an object of the 'Scanner' class called 'scanner' and pass 'System.in' as an argument to its constructor. This tells the 'Scanner' to read input from the standard input stream (the console).
+        // Here, 'Scanner' is a class that allows us to read user input from the console. We create an object of the 'Scanner' class called 'scanner' (or any other name we want) and pass 'System.in' as an argument to its constructor. This tells the 'Scanner' to read input from the standard input stream (the console).
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your name: ");
@@ -26,9 +26,6 @@ public class UserInput {
             cgpa = scanner.nextDouble();
         }
 
-//        System.out.print("Enter your expected grade: ");
-//        char grade = scanner.next
-
         System.out.println("Hello, " + name);
         System.out.println("You are " + age + " years old");
         if (isStudent) {
@@ -38,6 +35,6 @@ public class UserInput {
             System.out.println("You are NOT enrolled as student");
         }
 
-        scanner.close(); // Good practice to close the object
+        scanner.close(); // Good practice to close the object, otherwise it may lead to unexpected results
     }
 }
