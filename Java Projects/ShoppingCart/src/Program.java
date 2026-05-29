@@ -8,6 +8,9 @@ public class Program {
         float price;
         int numOfItems;
 
+        System.out.print("What item would you like to buy?: ");
+        itemName = scanner.nextLine();
+
 
 
         scanner.close();
