@@ -14,6 +14,11 @@ public class Program {
         System.out.print("What is the price for each?: ");
         itemPrice = scanner.nextFloat(); // .nextFloat() for floating point numbers
 
+        System.out.print("How many would you like?: ");
+        numOfItems = scanner.nextInt();
+
+        float totalPrice = itemPrice * numOfItems;
+
 
 
         scanner.close();
