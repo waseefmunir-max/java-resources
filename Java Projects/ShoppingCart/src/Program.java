@@ -19,7 +19,8 @@ public class Program {
 
         float totalPrice = itemPrice * numOfItems;
 
-
+        System.out.println("\nYou have bought " + numOfItems + " " + itemName + "/s");
+        System.out.println("Your total is $" + totalPrice);
 
         scanner.close();
     }
