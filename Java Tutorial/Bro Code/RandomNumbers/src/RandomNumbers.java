@@ -2,7 +2,7 @@ import java.util.Random; // import the Random class
 
 public class RandomNumbers {
     public static void main(String[] args) {
-        Random random = new Random(); // Creating an object 'random' for 'Random' class
+        Random random = new Random(); // Creating an object 'random' for 'Random' class. And unlike 'Scanner' class, we don't need to pass 'System.in' as an argument for the constructor of 'Random' class, because we are not taking any input from the user, we are generating random numbers. Also, we don't need to close the 'random' object.
 
         int randomNumber1 = random.nextInt(); // generates a random number of type int, in the range of -2,147,483,648 to 2,147,483,647
         int randomNumber2 = random.nextInt(6); // generates a random number of type int, in the range of 0 to 5 (6 is exclusive, so it will not be included in the range)
@@ -10,10 +10,14 @@ public class RandomNumbers {
 
         double randomDouble = random.nextDouble(); // We can generate random numbers for doubles also
 
+        boolean isHeads = random.nextBoolean(); // And also for booleans
+
         System.out.println(randomNumber1);
         System.out.println(randomNumber2);
         System.out.println(randomNumber3);
 
         System.out.println(randomDouble);
+
+        System.out.println("Tossing heads or tails.\nResult: " + (isHeads ? "HEADS" : "TAILS")); // using ternary operator to print "HEADS" if isHeads is true, and "TAILS" if isHeads is false
     }
 }
