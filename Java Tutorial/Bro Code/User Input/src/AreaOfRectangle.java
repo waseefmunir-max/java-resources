@@ -4,7 +4,7 @@ public class AreaOfRectangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double length, width, area;
+        double length, width, area; // 
 
         System.out.print("Enter the length of the rectangle: ");
         length = scanner.nextDouble();
