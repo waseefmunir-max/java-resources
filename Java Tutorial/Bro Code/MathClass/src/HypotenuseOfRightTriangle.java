@@ -31,7 +31,7 @@ public class HypotenuseOfRightTriangle {
 
         lengthHypotenuse = Math.sqrt(Math.pow(lengthBase, 2) + Math.pow(lengthAltitude, 2));
 
-        System.out.printf("Hypotenuse of the triangle: %.2f", lengthHypotenuse);
+        System.out.printf("Hypotenuse of the triangle: %.2fm²", lengthHypotenuse);
 
         scanner.close();
     }
