@@ -20,7 +20,7 @@ public class UserInput {
         boolean isStudent = scanner.nextBoolean();
 
         // To read doubles, you can use the nextDouble() method. For example:
-        double cgpa = 0;
+        double cgpa = 0; // if this is not initialized, it will print an error. We need to initialize it, in case if user doesn't put any input, it will proceed with the initialized value
         char gradeExpected = 0;
 
         if (isStudent) {
