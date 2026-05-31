@@ -17,6 +17,9 @@ public class HypotenuseOfRightTriangle {
         if (userChoice == 1) {
             lengthBase = random.nextDouble(1, 101);
             lengthAltitude = random.nextDouble(1, 101);
+
+            System.out.println("Base of the triangle: " + lengthBase);
+            System.out.println("Altitude of the triangle: " + lengthAltitude);
         } else if (userChoice == 2) {
             System.out.print("Enter the length of base (within 100): ");
             lengthBase = scanner.nextDouble();
@@ -28,7 +31,7 @@ public class HypotenuseOfRightTriangle {
 
         lengthHypotenuse = Math.sqrt(Math.pow(lengthBase, 2) + Math.pow(lengthAltitude, 2));
 
-        System.out.printf("Hypotenuse of the triangle: %f", lengthHypotenuse);
+        System.out.printf("Hypotenuse of the triangle: %.2f", lengthHypotenuse);
 
         scanner.close();
     }
