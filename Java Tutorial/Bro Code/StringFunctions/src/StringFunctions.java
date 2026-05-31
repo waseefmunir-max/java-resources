@@ -17,8 +17,8 @@ public class StringFunctions {
             System.out.println("Your entered texts: " + text);
         }
 
-        // .isEmpty checks if the string is empty (length is 0), and it counts whitespaces as characters, so if the string contains only whitespaces, .isEmpty will return false.
-        // .isBlank checks if the string is empty, but unlike .isEmpty, it ignores whitespaces. So if the string contains only whitespaces, .isBlank will return true.
+        // .isEmpty checks if the string is empty (length is 0), and it counts whitespaces as characters, so if the string contains only whitespaces, .isEmpty method will return false.
+        // .isBlank checks if the string is empty, but unlike .isEmpty, it ignores whitespaces. So if the string contains only whitespaces, .isBlank method will return true.
 
         scanner.close();
     }
