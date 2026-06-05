@@ -24,6 +24,16 @@ public class Printf {
 
         System.out.printf("%s is %d years old", name, age);
 
+        // [flags]
+        // + : include a plus sign for positive numbers
+        // , : include commas as thousand separators
+        // ( : enclose negative numbers in parentheses
+        // space : include a space before positive numbers, and a minus sign before negative numbers
+
+        double x = 2.5;
+        double y = 12.5;
+        double z = -24.5;
+
 
     }
 }
