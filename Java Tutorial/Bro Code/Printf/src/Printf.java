@@ -20,9 +20,11 @@ public class Printf {
         System.out.printf("Your name starts with %c\n", firstLetter);
         System.out.printf("You are %d years old\n", age);
         System.out.printf("Your are %.2f inches tall\n", height);
-        System.out.printf("Employed: %b", isEmployed);
+        System.out.printf("Employed: %b\n", isEmployed);
 
-        System.out.printf("%s is %d years old", name, age);
+        System.out.printf("%s is %d years old\n", name, age);
+
+        System.out.println();
 
         // [flags]
         // + : include a plus sign for positive numbers
@@ -34,6 +36,9 @@ public class Printf {
         double y = 12.5;
         double z = -24.5;
 
-
+        // +
+        System.out.printf("x: %+.2f\n", x);
+        System.out.printf("y: %+.2f\n", y);
+        System.out.printf("z: %+.2f\n", z);
     }
 }
