@@ -63,5 +63,14 @@ public class Printf {
         System.out.printf("x3: % .2f\n", x3);
         System.out.printf("y3: % d\n", y3);
         System.out.printf("z3: % .2f\n\n", z3);
+
+        System.out.println();
+
+        // ---------------------------------------------------------------------------------------------------------
+
+        // [width]
+        // 0 : pad with zeros
+        // number : right justified padding with spaces (if the number is positive, it will be right justified, and if the number is negative, it will be left justified)
+        // -number : left justified padding with spaces (if the number is positive, it will be left justified, and if the number is negative, it will be right justified)
     }
 }
