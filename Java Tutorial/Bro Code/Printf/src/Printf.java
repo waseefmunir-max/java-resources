@@ -56,5 +56,12 @@ public class Printf {
         System.out.printf("y2: %(d\n", y2);
         System.out.printf("z2: %(.2f\n\n", z2);
 
+        // space
+        double x3 = 2.5;
+        int y3 = 12;
+        double z3 = -24.5;
+        System.out.printf("x3: % .2f\n", x3);
+        System.out.printf("y3: % d\n", y3);
+        System.out.printf("z3: % .2f\n\n", z3);
     }
 }
