@@ -72,5 +72,25 @@ public class Printf {
         // 0 : pad with zeros
         // number : right justified padding with spaces (if the number is positive, it will be right justified, and if the number is negative, it will be left justified)
         // -number : left justified padding with spaces (if the number is positive, it will be left justified, and if the number is negative, it will be right justified)
+
+        int id1 = 1;
+        int id2 = 23;
+        int id3 = 456;
+        int id4 = 7890;
+
+        System.out.printf("%04d\n", id1);
+        System.out.printf("%04d\n", id2);
+        System.out.printf("%04d\n", id3);
+        System.out.printf("%04d\n\n", id4);
+
+        System.out.printf("%4d\n", id1);
+        System.out.printf("%4d\n", id2);
+        System.out.printf("%4d\n", id3);
+        System.out.printf("%4d\n\n", id4);
+
+        System.out.printf("%-4d\n", id1);
+        System.out.printf("%-4d\n", id2);
+        System.out.printf("%-4d\n", id3);
+        System.out.printf("%-4d\n\n", id4);
     }
 }
