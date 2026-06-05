@@ -78,19 +78,19 @@ public class Printf {
         int id3 = 456;
         int id4 = 7890;
 
-        System.out.printf("%04d\n", id1);
-        System.out.printf("%04d\n", id2);
-        System.out.printf("%04d\n", id3);
-        System.out.printf("%04d\n\n", id4);
+        System.out.printf("%04d\n", id1); // prints 0001
+        System.out.printf("%04d\n", id2); // prints 0023
+        System.out.printf("%04d\n", id3); // prints 0456
+        System.out.printf("%04d\n\n", id4); // prints 7890, because it is already 4 digits, so it will not be padded with zeros
 
-        System.out.printf("%4d\n", id1);
-        System.out.printf("%4d\n", id2);
-        System.out.printf("%4d\n", id3);
-        System.out.printf("%4d\n\n", id4);
+        System.out.printf("%4d\n", id1); // prints "   1", because it is right justified, and there are 3 spaces before the number 1
+        System.out.printf("%4d\n", id2); // prints "  23", because it is right justified, and there are 2 spaces before the number 23
+        System.out.printf("%4d\n", id3); // prints " 456", because it is right justified, and there is 1 space before the number 456
+        System.out.printf("%4d\n\n", id4); // prints "7890", because it is already 4 digits, so it will not be padded with spaces
 
-        System.out.printf("%-4d\n", id1);
-        System.out.printf("%-4d\n", id2);
-        System.out.printf("%-4d\n", id3);
-        System.out.printf("%-4d\n\n", id4);
+        System.out.printf("%-4d\n", id1); // prints "1   ", because it is left justified, and there are 3 spaces after the number 1
+        System.out.printf("%-4d\n", id2); // prints "23  ", because it is left justified, and there are 2 spaces after the number 23
+        System.out.printf("%-4d\n", id3); // prints "456 ", because it is left justified, and there is 1 space after the number 456
+        System.out.printf("%-4d\n\n", id4); // prints "7890", because it is already 4 digits, so it will not be padded with spaces
     }
 }
