@@ -18,6 +18,7 @@ public class Calculator {
         System.out.print("Enter the # of years: ");
         numOfYears = scanner.nextDouble();
 
+        System.out.println("Compound interest: " + compoundInterest);
         System.out.println("The amount after 1 year(s) is: " + amount);
     }
 }
