@@ -6,7 +6,7 @@ public class CommonIssuesWIthUserInput {
 
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // Removes the newline character left in the buffer after reading an integer
+        scanner.nextLine(); // Removes the newline character left in the buffer after reading an integer. Only necessary if you want to read a string after reading an integer, otherwise, you can skip this line.
 
         System.out.print("Enter your favorite color: ");
         String color = scanner.nextLine();

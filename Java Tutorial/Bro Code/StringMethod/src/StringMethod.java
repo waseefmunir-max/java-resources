@@ -21,7 +21,7 @@ public class StringMethod {
         System.out.println(index4);
         System.out.println(index5);
         System.out.println();
-
+        // ---------------------------------------------------------------------------------------------------------
 
         // lastIndex()
         int index6 = name.lastIndexOf('e');
@@ -39,7 +39,7 @@ public class StringMethod {
         System.out.println(index8);
         System.out.println(index9);
         System.out.println();
-
+        // ---------------------------------------------------------------------------------------------------------
 
         // trim()
         String text1 = "Hello world!";
@@ -52,7 +52,7 @@ public class StringMethod {
         System.out.printf("|%s|\n", text1);
         System.out.printf("|%s|\n", text2);
         System.out.println();
-
+        // ---------------------------------------------------------------------------------------------------------
 
         // replace()
         String nameType = "Human";
@@ -62,6 +62,8 @@ public class StringMethod {
 
         System.out.println(nameType);
         System.out.println();
+        // ---------------------------------------------------------------------------------------------------------
+
 
         // isEmpty()
         Scanner scanner = new Scanner(System.in);
@@ -77,6 +79,8 @@ public class StringMethod {
             System.out.println("Welcome, " + fullName);
         }
         System.out.println();
+        // ---------------------------------------------------------------------------------------------------------
+
 
         // contains()
         if (fullName.contains(" ")) {
@@ -84,6 +88,28 @@ public class StringMethod {
         } else {
             System.out.println("Your name doesn't contain any spaces");
         }
+        System.out.println();
+        // ---------------------------------------------------------------------------------------------------------
+
+
+        //equals() and equalsIgnoreCase()
+        String username, password;
+
+        System.out.print("Enter your username: ");
+        username = scanner.nextLine();
+
+        System.out.print("Enter your password: ");
+        password = scanner.nextLine();
+
+        if (password.equals(username)) {
+            System.out.println("Username and password can't be same");
+        } else if (password.equalsIgnoreCase(username)) {
+            System.out.println("Username and password can't be same, even if they have different cases");
+        } else {
+            System.out.println("Account created");
+        }
+        System.out.println();
+        // ---------------------------------------------------------------------------------------------------------
 
         scanner.close();
     }
