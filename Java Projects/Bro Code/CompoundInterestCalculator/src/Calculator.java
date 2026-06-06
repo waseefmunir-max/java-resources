@@ -24,5 +24,7 @@ public class Calculator {
 
         System.out.printf("The amount after 1 year(s) is: %.2f", amount);
         System.out.printf("Compound interest: %.2f\n", compoundInterest);
+
+        scanner.close(); // closing the scanner object to prevent memory leaks
     }
 }
