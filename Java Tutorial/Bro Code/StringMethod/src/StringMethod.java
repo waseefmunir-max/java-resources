@@ -13,10 +13,18 @@ public class StringMethod {
         int index4 = name.indexOf('s', 2); // start searching for 's' from index 2
         int index5 = name.indexOf("Munir"); // returns the index of the first character of "Munir"
 
+        int index6 = name.lastIndexOf('e');
+        int index7 = name.lastIndexOf("e");
+
         System.out.println(index1);
         System.out.println(index2);
         System.out.println(index3);
         System.out.println(index4);
         System.out.println(index5);
+
+        System.out.println();
+
+        System.out.println(index6);
+        System.out.println(index7);
     }
 }
