@@ -76,6 +76,14 @@ public class StringMethod {
         } else {
             System.out.println("Welcome, " + fullName);
         }
+        System.out.println();
+
+        // contains()
+        if (fullName.contains(" ")) {
+            System.out.println("Your name contains space");
+        } else {
+            System.out.println("Your name doesn't contain any spaces");
+        }
 
         scanner.close();
     }
