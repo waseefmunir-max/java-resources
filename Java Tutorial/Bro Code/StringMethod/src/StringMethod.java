@@ -34,5 +34,17 @@ public class StringMethod {
 
         System.out.println(index8);
         System.out.println(index9);
+        System.out.println();
+
+        // trim()
+        String text1 = "Hello world!";
+//        String text2 = "                       Loren Ipsum           ";
+        String text2 = "                       Loren             Ipsum           ";
+
+        text1 = text1.trim();
+        text2 = text2.trim();
+
+        System.out.printf("|%s|\n", text1);
+        System.out.printf("|%s|\n", text2);
     }
 }
