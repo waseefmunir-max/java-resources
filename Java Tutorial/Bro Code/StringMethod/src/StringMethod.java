@@ -27,5 +27,12 @@ public class StringMethod {
         System.out.println(index6);
         System.out.println(index7);
         System.out.println();
+
+        // toUppercase() and toLowerCase()
+        String index8 = name.toUpperCase();
+        String index9 = name.toLowerCase();
+
+        System.out.println(index8);
+        System.out.println(index9);
     }
 }
