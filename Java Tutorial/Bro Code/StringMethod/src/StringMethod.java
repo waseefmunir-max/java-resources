@@ -70,9 +70,9 @@ public class StringMethod {
         String fullName = scanner.nextLine();
 
         if (fullName.isEmpty()) {
-            System.out.println("Your name has whitespaces but doesn't contain any characters");
+            System.out.println("Your name doesn't contain any characters!");
         } else if (fullName.isBlank()) {
-            System.out.println("Your name doesn't have any whitespaces");
+            System.out.println("Your name has whitespaces but doesn't contain any characters");
         } else {
             System.out.println("Welcome, " + fullName);
         }
