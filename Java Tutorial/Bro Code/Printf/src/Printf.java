@@ -64,8 +64,6 @@ public class Printf {
         System.out.printf("y3: % d\n", y3);
         System.out.printf("z3: % .2f\n\n", z3);
 
-        System.out.println();
-
         // ---------------------------------------------------------------------------------------------------------
 
         // [width]
