@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringMethod {
     public static void main(String[] args) {
         String name = "Waseef Munir";
@@ -60,5 +62,21 @@ public class StringMethod {
 
         System.out.println(nameType);
         System.out.println();
+
+        // isEmpty()
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String fullName = scanner.nextLine();
+
+        if (fullName.isEmpty()) {
+            System.out.println("Your name has whitespaces but doesn't contain any characters");
+        } else if (fullName.isBlank()) {
+            System.out.println("Your name doesn't have any whitespaces");
+        } else {
+            System.out.println("Welcome, " + fullName);
+        }
+
+        scanner.close();
     }
 }
