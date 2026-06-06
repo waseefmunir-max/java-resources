@@ -11,6 +11,7 @@ public class Calculator {
 
         System.out.print("Enter the interest rate (in %): ");
         interestRate = scanner.nextDouble();
+        interestRate /= 100.0;
 
         System.out.print("Enter the # of times compounded per year: ");
         numOfCompoundedTimes = scanner.nextDouble();
@@ -19,8 +20,9 @@ public class Calculator {
         numOfYears = scanner.nextDouble();
 
         amount = principleAmount * Math.pow((1 + interestRate / numOfCompoundedTimes), (numOfCompoundedTimes * numOfYears));
+        compoundInterest = amount - principleAmount;
 
-        System.out.printf("Compound interest: %.2f\n", compoundInterest);
         System.out.printf("The amount after 1 year(s) is: %.2f", amount);
+        System.out.printf("Compound interest: %.2f\n", compoundInterest);
     }
 }
