@@ -20,6 +20,7 @@ public class StringMethod {
         System.out.println(index5);
         System.out.println();
 
+
         // lastIndex()
         int index6 = name.lastIndexOf('e');
         int index7 = name.lastIndexOf("e");
@@ -28,6 +29,7 @@ public class StringMethod {
         System.out.println(index7);
         System.out.println();
 
+
         // toUppercase() and toLowerCase()
         String index8 = name.toUpperCase();
         String index9 = name.toLowerCase();
@@ -35,6 +37,7 @@ public class StringMethod {
         System.out.println(index8);
         System.out.println(index9);
         System.out.println();
+
 
         // trim()
         String text1 = "Hello world!";
@@ -46,5 +49,16 @@ public class StringMethod {
 
         System.out.printf("|%s|\n", text1);
         System.out.printf("|%s|\n", text2);
+        System.out.println();
+
+
+        // replace()
+        String nameType = "Human";
+
+        nameType = nameType.replace('u', 'o');
+//        nameType = nameType.replace("u", "o"); // Both works fine
+
+        System.out.println(nameType);
+        System.out.println();
     }
 }
