@@ -24,8 +24,13 @@ public class JavaMethodReturnValues {
 
         System.out.println();
 
-        System.out.println(greetingMsg("Alan"));
-        System.out.println(greetingMsg("Paul"));
-        System.out.println(greetingMsg("Walker"));
+//        System.out.println(greetingMsg("Alan"));
+//        System.out.println(greetingMsg("Paul"));
+//        System.out.println(greetingMsg("Walker"));
+
+        String[] name = {"Alan", "Paul", "Walker"};
+        for (String nameArr : name) {
+            System.out.println(greetingMsg(nameArr));
+        }
     }
 }

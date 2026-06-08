@@ -7,7 +7,7 @@ public class JavaMethodParameters {
         System.out.println(firstName + " Walker," + " age: " + age);
     }
 
-    static void checkAge (int age) {
+    static void checkAge(int age) {
         if (age >= 18 && age <= 60) {
             System.out.println("You are eligible to vote!");
         } else if (age > 60) {
