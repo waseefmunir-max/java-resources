@@ -1,7 +1,7 @@
 public class CallAConstrFromAnothConstructor {
-    int releaseYear;
-    String brandName;
-    String modelName;
+    private final int releaseYear;
+    private final String brandName;
+    private final String modelName;
 
     public CallAConstrFromAnothConstructor(String modelName, String brandName) {
 //        brandName = "Hello"; // This line will cause an error
