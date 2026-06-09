@@ -1,6 +1,7 @@
 public class CallAConstrFromAnothConstructor {
     int releaseYear;
-    String brandName, modelName;
+    String brandName;
+    String modelName;
 
     public CallAConstrFromAnothConstructor(String modelName, String brandName) {
 //        brandName = "Hello"; // This line will cause an error
@@ -19,9 +20,9 @@ public class CallAConstrFromAnothConstructor {
     }
 
     public static void main(String[] args) {
-        CallAConstrFromAnothConstructor carObj1 = new CallAConstrFromAnothConstructor("BMW", "GTR"); // It will call the 1st constructor (on line 5)
+        CallAConstrFromAnothConstructor carObj1 = new CallAConstrFromAnothConstructor("BMW", "GTR"); // It will call the 1st constructor (at line 5)
 
-        CallAConstrFromAnothConstructor carObj2 = new CallAConstrFromAnothConstructor(1969, "Ford", "Mustang");
+        CallAConstrFromAnothConstructor carObj2 = new CallAConstrFromAnothConstructor(1969, "Ford", "Mustang"); // It will call the 2nd constructor (at line 10)
 
         carObj1.printCarInfo();
         carObj2.printCarInfo();
