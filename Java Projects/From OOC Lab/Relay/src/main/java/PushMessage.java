@@ -1,6 +1,6 @@
 public class PushMessage extends Message {
     private static final int PREVIEW_SIZE = 40;
-    private static final double FLAT_COST = 0.01;
+    private static final double FLAT_COST = 0.1;
 
     public PushMessage(Recipient recipient, String text) {
         super(recipient, text);
@@ -27,6 +27,6 @@ public class PushMessage extends Message {
 
     @Override
     public String describe() {
-        return "Push message for " + getRecipient().getName();
+        return "PUSH message for " + getRecipient().getName();
     }
 }

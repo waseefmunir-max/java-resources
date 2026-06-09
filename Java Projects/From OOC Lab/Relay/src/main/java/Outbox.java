@@ -14,7 +14,7 @@ public class Outbox {
         this.count = 0;
     }
 
-    public void queue(Message message) {
+    public void enqueue(Message message) {
         if (count >= messages.length) {
             throw new IllegalStateException("Outbox is full");
         }
@@ -23,9 +23,9 @@ public class Outbox {
         count++;
     }
 
-    public void queue(Message message, int repeatCount) {
+    public void enqueue(Message message, int repeatCount) {
         for (int i = 0; i < repeatCount; i++) {
-            queue(message);
+            enqueue(message);
         }
     }
 
@@ -54,7 +54,7 @@ public class Outbox {
         return total;
     }
 
-    public int waitingCount() {
+    public int size() {
         return count;
     }
 }

@@ -18,6 +18,6 @@ public class EmailMessage extends Message {
 
     @Override
     public String describe() {
-        return "Email message for " + getRecipient().getName();
+        return "EMAIL message for " + getRecipient().getName();
     }
 }

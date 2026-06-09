@@ -1,5 +1,5 @@
 public class PriorityEmailMessage extends EmailMessage {
-    private static final double SURCHARGE = 0.25;
+    private static final double SURCHARGE = 0.3;
 
     public PriorityEmailMessage(Recipient recipient, String text) {
         super(recipient, text);
@@ -17,6 +17,6 @@ public class PriorityEmailMessage extends EmailMessage {
 
     @Override
     public String describe() {
-        return "Priority " + super.describe();
+        return "PRIORITY " + super.describe();
     }
 }
