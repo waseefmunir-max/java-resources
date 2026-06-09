@@ -3,9 +3,9 @@ public class CallAConstrFromAnothConstructor {
     private final String brandName;
     private final String modelName;
 
-    public CallAConstrFromAnothConstructor(String modelName, String brandName) {
+    public CallAConstrFromAnothConstructor(String brandName, String modelName) {
 //        brandName = "Hello"; // This line will cause an error
-        this(2000, brandName, modelName);
+        this(2000, brandName, modelName); // Calling the constructor with 3 parameters from the constructor with 2 parameters. Here, we are passing the value of releaseYear as 2000, and the values of brandName and modelName are being passed from the parameters of this constructor.
         // Note that while calling a constructor from another constructor of same class, the calling line has to be the first line, otherwise it will throw an error
     }
 
