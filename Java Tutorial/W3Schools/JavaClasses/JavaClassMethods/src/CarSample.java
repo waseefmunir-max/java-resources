@@ -1,3 +1,5 @@
+// This class has no relation with Car.java and Driver.java
+
 public class CarSample {
     //    public static void fullThrottle() {
     public void fullThrottle() {

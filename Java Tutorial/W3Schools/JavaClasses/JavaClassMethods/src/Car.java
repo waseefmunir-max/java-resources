@@ -24,6 +24,7 @@ public class Car {
         System.out.println("Licence: " + carObject.numberPlate);
         System.out.println("Max speed: " + carObject.maxSpeed);
         System.out.println("Number of gears: " + carObject.noOfGears);
+
         carObject.status();
     }
 
