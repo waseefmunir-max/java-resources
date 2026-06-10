@@ -21,4 +21,16 @@ abstract class Animal {
     abstract void animalSound();
 }
 
+class Dog extends Animal {
+    @Override
+    void animalSound() {
+        System.out.println("Woof!");
+    }
+}
 
+class Cat extends Animal {
+    @Override
+    void animalSound() {
+        System.out.println("Meow!");
+    }
+}
