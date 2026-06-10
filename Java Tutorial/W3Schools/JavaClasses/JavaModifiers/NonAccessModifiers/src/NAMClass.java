@@ -2,7 +2,11 @@ public class NAMClass {
     final int x = 5;
     final String name = "Alan";
 
-    static void myStaticMethod() {
+    // If the method is public, then it will be accessible outside the class. Here, NAMClass2 class can access the myStaticMethod() by NAMClass.myStaticMethod()
+    // If the method is private, then it will not be accessible outside the class. Here, NAMClass2 class can not access the myStaticMethod() by NAMClass.myStaticMethod()
+//    private static void myStaticMethod() { // private
+//    static void myStaticMethod() { // set to 'default', which won't be accessible outside the package
+    public static void myStaticMethod() { // public
         System.out.println("This is a statement.");
     }
 
