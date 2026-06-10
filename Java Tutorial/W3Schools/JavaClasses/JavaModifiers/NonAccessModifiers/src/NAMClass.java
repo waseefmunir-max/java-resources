@@ -15,7 +15,7 @@ public class NAMClass {
         System.out.println(namObj.name);
 
         // The static method can be called in two ways:
-        myStaticMethod(); // Calling it directly
-        NAMClass.myStaticMethod(); // Calling by object
+        myStaticMethod(); // Calling it directly without creating objects
+        NAMClass.myStaticMethod(); // Calling it using the class name
     }
 }
