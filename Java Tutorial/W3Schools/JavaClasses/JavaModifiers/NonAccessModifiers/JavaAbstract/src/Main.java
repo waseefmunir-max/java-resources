@@ -18,5 +18,7 @@ class Student extends Main {
 }
 
 abstract class Animal {
-
+    abstract void animalSound();
 }
+
+
