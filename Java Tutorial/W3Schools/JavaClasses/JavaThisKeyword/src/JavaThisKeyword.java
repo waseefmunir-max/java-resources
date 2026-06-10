@@ -8,7 +8,7 @@ public class JavaThisKeyword {
     }
 
     public static void main(String[] args) {
-        JavaThisKeyword myObject = new JavaThisKeyword(5);
+        JavaThisKeyword myObject = new JavaThisKeyword(2);
 
         System.out.println(myObject.x);
     }
