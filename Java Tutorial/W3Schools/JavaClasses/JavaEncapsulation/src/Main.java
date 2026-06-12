@@ -8,11 +8,12 @@ public class Main {
 //        System.out.println(p.name);
 //        System.out.println(p.age);
 
-        // Instead, we can use getters and setters
-        p.setName("Alan Walker"); // calling setters because we are 'setting' a value for a field/variable
-        p.setAge(24);
+        // Setting (assigning) the values to private attributes using setters:
+        p.setName("John Doe");
+        p.setAge(21);
 
-        System.out.println(p.getName()); // calling getters because we need to get the value to display
+        // Getting (printing) the values to private attributes using getters:
+        System.out.println(p.getName());
         System.out.println(p.getAge());
     }
 }
