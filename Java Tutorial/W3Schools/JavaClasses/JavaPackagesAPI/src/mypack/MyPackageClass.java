@@ -1,4 +1,5 @@
 // created package according to w3schools:
+//package mypack;
 package mypack;
 
 class MyPackageClass {
