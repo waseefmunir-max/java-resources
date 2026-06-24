@@ -4,18 +4,20 @@
 // Note that the constructor name must match the class name, and it cannot have a return type (like void).
 
 public class JavaClassesConstructors {
+    //    private final int x = 0;
     private final int x;
 
     //    public JavaClassesConstructors() {
-    public JavaClassesConstructors(int y) {
+    public JavaClassesConstructors(int x) {
 //        x = 5;
-        x = y;
+//        x = x; // prints 0
+        this.x = x;
     }
 
     public static void main(String[] args) {
         JavaClassesConstructors myObj = new JavaClassesConstructors(5);
 
 //        System.out.println(myObj.x);
-        System.out.println(myObj.x);
+        System.out.println("x = " + myObj.x);
     }
 }
