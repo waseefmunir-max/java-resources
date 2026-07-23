@@ -1,9 +1,9 @@
 public class JavMethodOverloading {
-    static int sum2Numbers(int x, int y) {
+    public static int sum2Numbers(int x, int y) {
         return x + y;
     }
 
-    static double sum2Numbers(double x, double y) {
+    public static double sum2Numbers(double x, double y) {
         return x + y;
     } // Method with the same name can be declared, as long as their data type is different
 
