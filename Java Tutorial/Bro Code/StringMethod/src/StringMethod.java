@@ -4,8 +4,10 @@ public class StringMethod {
     public static void main(String[] args) {
         String name = "Waseef Munir";
 
+        // length()
         System.out.println(name.length());
 
+        // charAt()
         char letter = name.charAt(0);
         System.out.println(letter);
 

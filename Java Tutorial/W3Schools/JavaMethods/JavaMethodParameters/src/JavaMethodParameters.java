@@ -1,6 +1,6 @@
 public class JavaMethodParameters {
-    static void firstName(String fName) {
-        System.out.println(fName + " Walker");
+    static void firstName(String firstName) {
+        System.out.println(firstName + " Walker");
     }
 
     static void info(String firstName, int age) {
