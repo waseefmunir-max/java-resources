@@ -20,6 +20,7 @@ public class Second {
 //        System.out.println(myObj3.x);
 //        System.out.println(myObj3.y);
         System.out.println(myObj3.z);
+        System.out.println();
 
 //        myObj3.PI = 4.14159; // causes an error
     }
