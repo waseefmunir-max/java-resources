@@ -7,3 +7,12 @@ public class Main {
         System.out.println("Max speed is: " + x);
     }
 }
+
+class Second {
+    public static void main(String[] args) {
+        Main carObject = new Main();
+
+        carObject.fullThrottle();
+        carObject.maxSpeed(200);
+    }
+}
