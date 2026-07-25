@@ -12,7 +12,7 @@ public class AMClass1 {
         AMClass1 obj1 = new AMClass1();
 
         System.out.println("Name: " + obj.name);
-//        System.out.println("Age: " + obj.agePublic); // Throws out an error
+//        System.out.println("Age: " + obj.agePrivate); // Throws out an error
         System.out.println("Name: " + obj1.name);
         System.out.println("Age: " + obj1.agePublic);
     }
