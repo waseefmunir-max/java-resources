@@ -1,3 +1,4 @@
+//final class Vehicle { // you cannot inherit from a final class
 class Vehicle {
     protected final String brandName = "BMW";
 
@@ -12,7 +13,7 @@ class Car extends Vehicle {
     public static void main(String[] args) {
         Car car = new Car();
 
-        System.out.println(car.modelName + " " + car.brandName);
+        System.out.println(car.brandName + " " + car.modelName);
         car.horn();
     }
 }
