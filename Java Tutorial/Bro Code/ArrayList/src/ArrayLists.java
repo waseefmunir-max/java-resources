@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayLists {
     public static void main(String[] args) {
@@ -30,12 +31,36 @@ public class ArrayLists {
 
         System.out.println(listFruit);
 
-        for (String lF: listFruit) {
+        for (String lF : listFruit) {
             System.out.println(lF);
         }
 
         System.out.println();
 
+        // .remove() method:
+        listFruit.remove(0); // removes "Mango" from the list
+        System.out.println(listFruit);
 
+        // .set() method:
+        listFruit.set(1, "Mango"); // replaces "Apple" with "Mango" at index 1
+        System.out.println(listFruit);
+
+        // .get() method:
+        System.out.println(listFruit.get(1));
+
+        // .size() method:
+        System.out.println(listFruit.size()); // prints the size (number of elements) of the array
+
+        // Collections.sort(ArrayName) - Sorts an array alphanumerically
+        listFruit.remove(1);
+        listFruit.add(0, "Mango");
+        listFruit.add("Banana");
+        listFruit.add("Orange");
+        listFruit.add("Apple");
+
+        System.out.println(listFruit); // prints in default (by index) order
+
+        Collections.sort(listFruit);
+        System.out.println(listFruit); // prints the elements in alphanumerical order
     }
 }
